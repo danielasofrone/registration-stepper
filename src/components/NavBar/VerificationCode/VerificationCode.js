@@ -1,16 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Button from '../Button/Button';
-import InputField from '../InputField/InputField';
-import * as S from './welcomeBack.styled';
+import Button from '../../Button/Button';
+import InputField from '../../InputField/InputField';
+import * as S from './verificationCode.styled';
 
-const WelcomeBack = () => {
+const VerificationCode = () => {
   return (
     <S.Wrapper>
-      <S.WelcomeTitle>Willkommen zurück bei FabuCar</S.WelcomeTitle>
+      <S.WelcomeTitle>Gib deinen Verifizierungscode ein</S.WelcomeTitle>
       <S.Undertitle>
-        Melde dich mit deiner E-Mail Adresse oder deinem Benutzernamen an. Falls
-        du dein Passwort nicht mehr weißt, klicke einfach auf “vergessen”.
+        Wir haben dir eine E-Mail an <br /> s.beeken@yahoo.de <br /> geschickt.
+        Bitte gib den darin enthaltenen sechsstelligen Verifizierungscode hier
+        ein.
       </S.Undertitle>
       <S.ButtonsContainer>
         <InputField
@@ -39,4 +40,4 @@ const WelcomeBack = () => {
   );
 };
 
-export default WelcomeBack;
+export default VerificationCode;

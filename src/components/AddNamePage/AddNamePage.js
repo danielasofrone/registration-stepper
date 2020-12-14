@@ -12,26 +12,25 @@ const AddNamePage = () => {
         Wichtig ist, dass du deinen richtigen Namen eingibst, da wir nur so
         deine Qualifikation zuordnen können.
       </S.Undertitle>
-      <S.Undertitle>
-        Hinweis: Für eine vollständige Registrierung muss ein Nachweis als
-        Berufs-KFZler erbracht werden.
+      <S.Undertitle hasMargin>
+        <strong>Hinweis:</strong> Für eine vollständige Registrierung muss ein
+        Nachweis als Berufs-KFZler erbracht werden.
       </S.Undertitle>
-      <S.InputFieldWrapper>
+      <S.ButtonsContainer>
         <InputField type="text" placeholder="Vor- und Nachname"></InputField>
-      </S.InputFieldWrapper>
-      <S.ButtonWrapper>
-        <Link to={'/welcome'}>
-          <Button isSmall hasMargin>
-            Zurück
-          </Button>
-        </Link>
-        <Link to={'/add-email'}>
-          <Button isSmall isBlue>
-            Weiter
-          </Button>
-        </Link>
-      </S.ButtonWrapper>
-      <S.Undertitle>Du hast bereits einen Account? Anmelden</S.Undertitle>
+        <S.ButtonWrapper>
+          <Link to={'/welcome'}>
+            <Button isSmall hasMargin>
+              Zurück
+            </Button>
+          </Link>
+          <Link to={'/add-email'}>
+            <Button isSmall isBlue>
+              Weiter
+            </Button>
+          </Link>
+        </S.ButtonWrapper>
+      </S.ButtonsContainer>
     </S.Wrapper>
   );
 };

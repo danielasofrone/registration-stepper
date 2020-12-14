@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 export const Logo = styled.img`
   width: 125px;
   height: 139px;
-  margin-top: 30%;
+  margin-top: 96px;
   text-align: center;
   img {
     vertical-align: middle;

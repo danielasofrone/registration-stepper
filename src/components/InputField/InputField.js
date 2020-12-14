@@ -29,8 +29,6 @@ InputField.defaultProps = {
 InputField.propTypes = {
   placeholder: PropTypes.string,
   type: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default InputField;
