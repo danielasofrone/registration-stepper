@@ -2,22 +2,19 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Button from '../Button/Button';
 import InputField from '../InputField/InputField';
-import * as S from './welcomeBack.styled';
+import * as S from './addPasswordPage.styled';
 
-const WelcomeBack = () => {
+const AddPasswordPage = () => {
   return (
     <S.Wrapper>
-      <S.WelcomeTitle>Willkommen zurück bei FabuCar</S.WelcomeTitle>
+      <S.WelcomeTitle>Sichere dein Konto mit einem Passwort</S.WelcomeTitle>
+      <InputField type="password" placeholder="Passwort" />
+      <InputField type="password" value="" placeholder="Passwort wiederholen" />
       <S.Undertitle>
-        Melde dich mit deiner E-Mail Adresse oder deinem Benutzernamen an. Falls
-        du dein Passwort nicht mehr weißt, klicke einfach auf “vergessen”.
+        Das Passwort muss mindestens 8 Zeichen lang sein und sowohl Zahlen wie
+        auch Buchstaben enthalten.
       </S.Undertitle>
       <S.ButtonsContainer>
-        <InputField
-          type="text"
-          placeholder="E-Mail Adresse oder Benutzername"
-        />
-        <InputField type="password" value="" placeholder="Passwort" />
         <S.ButtonWrapper>
           <Link to={'/'}>
             <Button isSmall hasMargin>
@@ -35,4 +32,4 @@ const WelcomeBack = () => {
   );
 };
 
-export default WelcomeBack;
+export default AddPasswordPage;

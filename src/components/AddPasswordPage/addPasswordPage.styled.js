@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   text-align: center;
-  margin: 85px auto;
+  margin: 90px auto;
 `;
 
 export const WelcomeTitle = styled.div`
@@ -10,7 +10,7 @@ export const WelcomeTitle = styled.div`
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  margin: 96px 20px 36px 20px;
+  margin: 153px 20px 36px 20px;
 `;
 
 export const Undertitle = styled.p`
@@ -42,29 +42,4 @@ export const ButtonWrapper = styled.div`
     position: initial;
     margin-top: 70px;
   }
-`;
-
-export const EmailContainer = styled.div`
-  color: #0071bc;
-  margin: 15px 0;
-`;
-
-export const InputWrapper = styled.form`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-export const Input = styled.input`
-  width: 48px;
-  height: 48px;
-  margin: 0 3px 20px 3px;
-  background: #dce2e5;
-  border-radius: 5px;
-  font-family: 'Nunito Sans';
-  font-size: 24px;
-  color: #000;
-  font-weight: 700;
-  border: none;
-  text-align: center;
 `;

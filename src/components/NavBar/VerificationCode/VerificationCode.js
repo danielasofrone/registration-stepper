@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Button from '../../Button/Button';
-import InputField from '../../InputField/InputField';
+// import InputField from '../../InputField/InputField';
 import * as S from './verificationCode.styled';
 
 const VerificationCode = () => {
@@ -9,27 +9,27 @@ const VerificationCode = () => {
     <S.Wrapper>
       <S.WelcomeTitle>Gib deinen Verifizierungscode ein</S.WelcomeTitle>
       <S.Undertitle>
-        Wir haben dir eine E-Mail an <br /> s.beeken@yahoo.de <br /> geschickt.
+        Wir haben dir eine E-Mail an{' '}
+        <S.EmailContainer> s.beeken@yahoo.de </S.EmailContainer> geschickt.
         Bitte gib den darin enthaltenen sechsstelligen Verifizierungscode hier
         ein.
       </S.Undertitle>
       <S.ButtonsContainer>
-        <InputField
-          type="text"
-          placeholder="E-Mail Adresse oder Benutzername"
-        ></InputField>
-        <InputField
-          type="password"
-          value=""
-          placeholder="Passwort"
-        ></InputField>
+        <S.InputWrapper>
+          <S.Input type="text" maxLength="1" />
+          <S.Input type="text" maxLength="1" />
+          <S.Input type="text" maxLength="1" />
+          <S.Input type="text" maxLength="1" />
+          <S.Input type="text" maxLength="1" />
+          <S.Input type="text" maxLength="1" />
+        </S.InputWrapper>
         <S.ButtonWrapper>
-          <Link to={'/'}>
+          <Link to={'/add-email'}>
             <Button isSmall hasMargin>
               Zurück
             </Button>
           </Link>
-          <Link to={'/add-name'}>
+          <Link to={'/add-password'}>
             <Button isSmall isBlue>
               Weiter
             </Button>

@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 90%;
   text-align: center;
-  margin: 90px auto;
-  @media (min-width: 576px) {
-    width: 50%;
-  }
+  margin: 183px auto;
 `;
 
 export const WelcomeTitle = styled.div`
@@ -14,18 +10,24 @@ export const WelcomeTitle = styled.div`
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 153px;
+  margin: 153px 20px 0 20px;
 `;
 
 export const Undertitle = styled.p`
   font-family: 'Nunito Sans';
   font-size: 14px;
   line-height: 19px;
-  margin-top: 20px;
+  margin: 20px 25px 0 25px;
   strong {
     font-weight: 800;
   }
   margin-bottom: ${({hasMargin}) => (hasMargin ? '36px' : '0')};
+`;
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -42,5 +44,3 @@ export const ButtonWrapper = styled.div`
     margin-top: 70px;
   }
 `;
-
-export const ButtonsContainer = styled.div``;

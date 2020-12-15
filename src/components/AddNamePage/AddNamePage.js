@@ -17,7 +17,7 @@ const AddNamePage = () => {
         Nachweis als Berufs-KFZler erbracht werden.
       </S.Undertitle>
       <S.ButtonsContainer>
-        <InputField type="text" placeholder="Vor- und Nachname"></InputField>
+        <InputField type="text" placeholder="Vor- und Nachname" />
         <S.ButtonWrapper>
           <Link to={'/welcome'}>
             <Button isSmall hasMargin>

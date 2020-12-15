@@ -2,7 +2,16 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   text-align: center;
-  margin: 85px auto;
+  margin: 90px auto;
+`;
+
+export const Logo = styled.img`
+  width: 140px;
+  height: 171px;
+  text-align: center;
+  img {
+    vertical-align: middle;
+  }
 `;
 
 export const WelcomeTitle = styled.div`
@@ -10,7 +19,11 @@ export const WelcomeTitle = styled.div`
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  margin: 96px 20px 36px 20px;
+  margin: 36px 20px 0 20px;
+`;
+
+export const TextContainer = styled.div`
+  margin: 0 25px;
 `;
 
 export const Undertitle = styled.p`
@@ -18,8 +31,8 @@ export const Undertitle = styled.p`
   font-size: 14px;
   margin-top: 20px;
   line-height: 19px;
-  margin-top: 36px;
-  margin: 0 25px 48px 25px;
+  margin-bottom: ${({hasMargin}) => (hasMargin ? ' 59px;' : '0')};
+
   white-space: normal;
 `;
 
@@ -31,10 +44,12 @@ export const ButtonsContainer = styled.div`
 
 export const ButtonWrapper = styled.div`
   position: absolute;
+  margin-top: 16px;
+  float: left;
   bottom: 20px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   a {
     text-decoration: none;
   }
@@ -44,27 +59,8 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const EmailContainer = styled.div`
-  color: #0071bc;
-  margin: 15px 0;
-`;
-
-export const InputWrapper = styled.form`
+export const BottomButtons = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: center;
-`;
-
-export const Input = styled.input`
-  width: 48px;
-  height: 48px;
-  margin: 0 3px 20px 3px;
-  background: #dce2e5;
-  border-radius: 5px;
-  font-family: 'Nunito Sans';
-  font-size: 24px;
-  color: #000;
-  font-weight: 700;
-  border: none;
-  text-align: center;
+  flex-direction: row;
 `;

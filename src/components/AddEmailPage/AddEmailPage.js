@@ -8,11 +8,7 @@ const AddEmailPage = () => {
   return (
     <S.Wrapper>
       <S.WelcomeTitle>Gib deine E-Mail Adresse ein</S.WelcomeTitle>
-      <InputField
-        type="text"
-        value=""
-        placeholder="E-mail Adresse"
-      ></InputField>
+      <InputField type="text" value="" placeholder="E-mail Adresse" />
       <S.Undertitle>
         Mit dem Fortfahren der Registrierung bestätige ich die{' '}
         <a
@@ -30,18 +26,20 @@ const AddEmailPage = () => {
         </a>{' '}
         gelesen und akzeptiert zu haben.
       </S.Undertitle>
-      <S.ButtonWrapper>
-        <Link to={'/add-name'}>
-          <Button isSmall hasMargin>
-            Zurück
-          </Button>
-        </Link>
-        <Link to={'/verification-code'}>
-          <Button isSmall isBlue>
-            Weiter
-          </Button>
-        </Link>
-      </S.ButtonWrapper>
+      <S.ButtonsContainer>
+        <S.ButtonWrapper>
+          <Link to={'/add-name'}>
+            <Button isSmall hasMargin>
+              Zurück
+            </Button>
+          </Link>
+          <Link to={'/verification-code'}>
+            <Button isSmall isBlue>
+              Weiter
+            </Button>
+          </Link>
+        </S.ButtonWrapper>
+      </S.ButtonsContainer>
     </S.Wrapper>
   );
 };

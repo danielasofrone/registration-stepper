@@ -4,6 +4,7 @@ export const Button = styled.div`
   min-width: ${({isSmall}) => (isSmall ? '150px' : '300px')};
   max-width: ${({isSmall}) => (isSmall ? '163px' : '343px')};
   margin-right: ${({hasMargin}) => (hasMargin ? '20px' : '0')};
+  margin-bottom: ${({hasMarginbuttom}) => (hasMarginbuttom ? '16px' : '0')};
   height: 48px;
   font-family: 'Nunito Sans';
   font-size: 14px;
@@ -18,5 +19,6 @@ export const Button = styled.div`
   &:hover {
     background: ${({isBlue}) => (isBlue ? '#1881c7;' : '#ffffff')};
     transition: background-color 0.3s;
+    border: ${({isBlue}) => (isBlue ? '' : '1px solid #0071BC')};
   }
 `;
