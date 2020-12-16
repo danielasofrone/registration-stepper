@@ -43,12 +43,47 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const InputContainer = styled.div``;
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
-export const Input = styled.input`
-  width: auto;
+export const ShortInput = styled.input`
+  width: 86px;
   height: 48px;
-  margin: 0 3px 20px 3px;
+  margin: 0 3px 5px 3px;
+  background: #dce2e5;
+  border-radius: 5px;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  line-height: 14px;
+  color: #939799;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+`;
+
+export const MiddleInput = styled.input`
+  width: 248px;
+  height: 48px;
+  margin: 0 3px 5px 3px;
+  background: #dce2e5;
+  border-radius: 5px;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  line-height: 14px;
+  color: #939799;
+  font-weight: 700;
+  border: none;
+  text-align: center;
+`;
+
+export const LongInput = styled.input`
+  width: 343px;
+  height: 48px;
+  margin: 0 3px 5px 3px;
   background: #dce2e5;
   border-radius: 5px;
   font-family: 'Nunito Sans';

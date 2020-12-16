@@ -56,6 +56,9 @@ export const ButtonWrapper = styled.div`
   @media (min-width: 576px) {
     position: initial;
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

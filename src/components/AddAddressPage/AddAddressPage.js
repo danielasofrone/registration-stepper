@@ -13,11 +13,11 @@ const AddAddressPage = () => {
       </S.Undertitle>
       <S.ButtonsContainer>
         <S.InputContainer>
-          <S.Input type="text" placeholder="Werkstattname" />
-          <S.Input type="text" value="" placeholder="Straße" />
-          <S.Input type="text" placeholder="Nr." />
-          <S.Input type="text" placeholder="PLZ" />
-          <S.Input type="text" placeholder="Stadt" />
+          <S.LongInput type="text" placeholder="Werkstattname" />
+          <S.MiddleInput type="text" value="" placeholder="Straße" />
+          <S.ShortInput type="text" placeholder="Nr." />
+          <S.ShortInput type="text" placeholder="PLZ" />
+          <S.MiddleInput type="text" placeholder="Stadt" />
         </S.InputContainer>
         <S.ButtonWrapper>
           <Link to={'/add-password'}>
