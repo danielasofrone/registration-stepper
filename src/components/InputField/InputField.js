@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import visible_password from '../../assets/icons/visible_password.svg';
+import visiblePassword from '../../assets/icons/visiblePassword.svg';
 import * as S from './inputField.styled';
 
 const InputField = ({type, placeholder, isPasswordField}) => {
@@ -12,7 +12,7 @@ const InputField = ({type, placeholder, isPasswordField}) => {
   };
 
   return (
-    <>
+    <S.InputContainer>
       <S.Input
         type={type}
         placeholder={placeholder}
@@ -20,9 +20,9 @@ const InputField = ({type, placeholder, isPasswordField}) => {
         onChange={handleOnChange}
       ></S.Input>
       <S.IconContainer isPasswordField={isPasswordField}>
-        <S.Icon src={visible_password} />
+        <S.Icon src={visiblePassword} />
       </S.IconContainer>
-    </>
+    </S.InputContainer>
   );
 };
 

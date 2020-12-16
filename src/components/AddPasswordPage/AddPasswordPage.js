@@ -8,20 +8,26 @@ const AddPasswordPage = () => {
   return (
     <S.Wrapper>
       <S.WelcomeTitle>Sichere dein Konto mit einem Passwort</S.WelcomeTitle>
-      <InputField type="password" placeholder="Passwort" />
-      <InputField type="password" value="" placeholder="Passwort wiederholen" />
-      <S.Undertitle>
-        Das Passwort muss mindestens 8 Zeichen lang sein und sowohl Zahlen wie
-        auch Buchstaben enthalten.
-      </S.Undertitle>
       <S.ButtonsContainer>
+        <InputField type="password" placeholder="Passwort" isPasswordField />
+        <InputField
+          type="password"
+          value=""
+          placeholder="Passwort wiederholen"
+          isPasswordField
+        />
+        <S.Undertitle>
+          Das Passwort muss mindestens 8 Zeichen lang sein und sowohl Zahlen wie
+          auch Buchstaben enthalten.
+        </S.Undertitle>
+
         <S.ButtonWrapper>
-          <Link to={'/'}>
+          <Link to={'/verification-code'}>
             <Button isSmall hasMargin>
               Zurück
             </Button>
           </Link>
-          <Link to={'/add-name'}>
+          <Link to={'/add-address'}>
             <Button isSmall isBlue>
               Weiter
             </Button>
