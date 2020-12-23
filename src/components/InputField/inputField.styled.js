@@ -13,6 +13,7 @@ export const InputContainer = styled.div`
 `;
 
 export const Input = styled.input`
+  border-radius: 5px;
   width: 270px;
   height: 48px;
   background: #dce2e5;
@@ -22,6 +23,9 @@ export const Input = styled.input`
   font-family: 'Nunito Sans';
   font-size: 14px;
   padding: 0 0 0 10px;
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const IconContainer = styled.span`
