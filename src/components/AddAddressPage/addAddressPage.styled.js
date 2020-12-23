@@ -22,6 +22,13 @@ export const Undertitle = styled.p`
   white-space: normal;
 `;
 
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
 export const ButtonsContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -41,13 +48,6 @@ export const ButtonWrapper = styled.div`
     position: initial;
     margin-top: 70px;
   }
-`;
-
-export const InputContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 `;
 
 export const ShortInput = styled.input`

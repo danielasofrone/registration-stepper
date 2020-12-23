@@ -11,14 +11,14 @@ const AddAddressPage = () => {
         Zur Verifizierung benötigen wir den genauen Namen und die Adresse der
         Werkstatt, in der du arbeitest oder die du betreibst.
       </S.Undertitle>
+      <S.InputContainer>
+        <S.LongInput type="text" placeholder="Werkstattname" />
+        <S.MiddleInput type="text" placeholder="Straße" />
+        <S.ShortInput type="text" placeholder="Nr." />
+        <S.ShortInput type="text" placeholder="PLZ" />
+        <S.MiddleInput type="text" placeholder="Stadt" />
+      </S.InputContainer>
       <S.ButtonsContainer>
-        <S.InputContainer>
-          <S.LongInput type="text" placeholder="Werkstattname" />
-          <S.MiddleInput type="text" value="" placeholder="Straße" />
-          <S.ShortInput type="text" placeholder="Nr." />
-          <S.ShortInput type="text" placeholder="PLZ" />
-          <S.MiddleInput type="text" placeholder="Stadt" />
-        </S.InputContainer>
         <S.ButtonWrapper>
           <Link to={'/add-password'}>
             <Button isSmall hasMargin>

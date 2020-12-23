@@ -14,15 +14,16 @@ const VerificationCode = () => {
         Bitte gib den darin enthaltenen sechsstelligen Verifizierungscode hier
         ein.
       </S.Undertitle>
+
+      <S.InputWrapper>
+        <S.Input type="text" maxLength="1" />
+        <S.Input type="text" maxLength="1" />
+        <S.Input type="text" maxLength="1" />
+        <S.Input type="text" maxLength="1" />
+        <S.Input type="text" maxLength="1" />
+        <S.Input type="text" maxLength="1" />
+      </S.InputWrapper>
       <S.ButtonsContainer>
-        <S.InputWrapper>
-          <S.Input type="text" maxLength="1" />
-          <S.Input type="text" maxLength="1" />
-          <S.Input type="text" maxLength="1" />
-          <S.Input type="text" maxLength="1" />
-          <S.Input type="text" maxLength="1" />
-          <S.Input type="text" maxLength="1" />
-        </S.InputWrapper>
         <S.ButtonWrapper>
           <Link to={'/add-email'}>
             <Button isSmall hasMargin>

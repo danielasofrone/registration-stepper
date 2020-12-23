@@ -49,16 +49,17 @@ export const EmailContainer = styled.div`
   margin: 15px 0;
 `;
 
-export const InputWrapper = styled.form`
+export const InputWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 25px;
 `;
 
 export const Input = styled.input`
-  width: 48px;
-  height: 48px;
-  margin: 0 3px 20px 3px;
+  width: 35px;
+  height: 40px;
+  margin: 0 3px 0 3px;
   background: #dce2e5;
   border-radius: 5px;
   font-family: 'Nunito Sans';
